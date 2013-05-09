@@ -1,6 +1,6 @@
 HW5-Problem2b
 =============
-Factors the very large n. n = p*q.
+Factors the very large n using Fermat's factorization. For an odd integer N, N equals the difference of two squares. N = a^2 - b^2. n = p*q.
 
 
 fermat_factor(n)  
