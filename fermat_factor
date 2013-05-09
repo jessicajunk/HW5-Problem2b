@@ -1,0 +1,15 @@
+#HW5 Problem 2b
+#Fermat's factorization method. Factors the difference of two squares, a^2 - b^2 = n, and hence the odd integer n.
+#Finds two primes, p and q, such that p*q=n.
+
+def fermat_factor(n):
+    if n <= 0:
+        return [n]
+    if is_even(n):
+        return [2, n/2]
+    a = ceil(sqrt(n))
+    b2 = sqrt(a*a - n)
+    while not is_square(b2 ** 2):
+        a += 1
+        b2 = sqrt(a*a - n)
+    return [a - b2, a + b2]
