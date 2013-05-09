@@ -1,7 +1,15 @@
-#HW5 Problem 2b
-#Fermat's factorization method. Factors the difference of two squares, a^2 - b^2 = n, and hence the odd integer n.
-#Finds two primes, p and q, such that p*q=n.
+#HW5 Problem 2
 
+n = 4654252230393111226989449826741007006486078009450861095070222439898324342353927553909251532232407850265642079868425916328810273416481567992145162141358151
+
+#Problem 2a
+#Proves n is composite through Fermat's little theorem: for some a: 1<=a<n, a^(n-1) is congruent to 1 (mod n).
+a = randint(1, n)
+pow(a, n-1, n)
+
+
+#Problem 2b
+#Fermat's factorization method. Factors the difference of two squares, a^2 - b^2 = n, and hence the odd integer n.
 def fermat_factor(n):
     if n <= 0:
         return [n]
