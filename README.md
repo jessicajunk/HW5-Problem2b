@@ -1,6 +1,13 @@
 HW5-Problem2b
 =============
-Factors the very large n using Fermat's factorization. For an odd integer N, N equals the difference of two squares. N = a^2 - b^2. n = p*q.
+Proves that the very large n is composite through Fermat's little theorem: Mod(a^(n-1), n) != 1.
+Factors n using Fermat's factorization. For an odd integer N, N equals the difference of two squares. N = a^2 - b^2. n = p*q.
+
+
+a = randint(1, n)
+pow(a, n-1, n)
+-->  3528170590959055425532610716062985815428025040092806845397854395768347866690023709185019290176148224013557876233962944534783372250110522619211156941573162
+which is not 1 => not prime => composite. //
 
 
 fermat_factor(n)  
